@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Jaro Peeters</title>
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link href="./assets/css/output.css" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="assets/image/icons/favicon.svg">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    </head>
+
+    <body class="font-poppins">
+
+        <!-- home section -->
+        <section class="bg-white py-10 md:mb-10">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
+                    <div class="flex items-center mb-10 lg:mb-0">
+                        <p class="text-3xl font-extrabold">Jaro Peeters</p>
+
+                        <button class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md" @click="navbarOpen = !navbarOpen">
+                            button
+                        </button>
+                    </div>
+
+                    <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="about-me.html">About Me</a>
+                        </li>
+                        <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="projects.html">Projects</a>
+                        </li>
+                    </ul>
+
+                    <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <a href="#" class="px-12 py-4 bg-gradient-to-r from-[#00CAA5] to-[#008D73] hover:from-[#00b192] hover:to-[#00725f] text-white font-semibold text-lg rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">Contact Me</a>
+                    </div>
+                </nav>
+
+                <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+                    <div class="text-center lg:text-left mt-40 w-2/3">
+                        <p class="text-xl font-bold mb-4">Hey I'm</p>
+                        <h1 class="font-extrabold text-gradient text-3xl md:text-7xl leading-normal mb-6">Jaro Peeters</h1>
+                        <p class="font-medium text-gray-500 text-md md:text-lg leading-normal mb-12">I'm glad you're here! This portfolio showcases my growth, creativity, and passion for technology. Whether you're exploring out of curiosity or looking for a potential collaborator, you're in the right place.</p>
+
+                        <p class="font-medium text-gray-500 text-md md:text-lg leading-normal mb-12">I’m a <span class="font-bold text-gray-700">student</span> at Thomas More Kempen in Geel, Belgium. I'm currently studying <span class="font-bold text-gray-700">Application Development and Artificial Intelligence</span>. As a highly motivated and passionate learner, I always strive to give my best, continuously improving my skills and expanding my knowledge. I'm also dedicated to enhancing my soft skills daily. My biggest interests in the IT sector lie in designing and coding, where I enjoy creating innovative solutions and exploring new technologies.</p>
+
+                        <button class="px-12 py-2.5 bg-gradient-to-r from-[#00CAA5] to-[#008D73] hover:from-[#00b192] hover:to-[#00725f] text-white font-semibold text-base rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">Contact Me</button>
+                        <button onclick="window.open('CV_JaroPeeters.pdf', '_blank')"
+                                class="ml-8 px-12 py-2.5 bg-gradient-to-r from-[#BDBDBD] to-[#747474] hover:from-[#A6A6A6] hover:to-[#5e5e5e] text-white font-semibold text-base rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">
+                            Read CV
+                        </button>
+
+                        <button class="border-[4px] border-gray-500 text-gray-800 ml-8 px-12 py-2.5 font-semibold text-base rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">
+                            <span class="h-5 inline-block">
+                                <img src="assets/image/icons/github.svg" alt="github">
+                            </span>
+                            <a href="https://github.com/JaroPeeters/e-portfolio" target="_blank" rel="noopener noreferrer">Open Source</a>
+                        </button>
+
+
+                    </div>
+
+                    <div class="mt-24 w-1/3">
+                        <div class="inline-block bg-gradient-to-r from-[#00CAA5] to-[#008D73] p-2 rounded-full">
+                            <div class="bg-white p-2 rounded-full">
+                                <img class="rounded-full w-full h-auto object-cover" src="assets/image/JaroPeeters.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- home section //end -->
+
+        <!-- donation section -->
+        <section class="bg-gray-50 py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <p class="font-light text-gray-500 text-lg md:text-xl text-center uppercase mb-6">My Achievements</p>
+
+                <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-10">Selection of all my<br><span class="text-gradient">coded projects</span></h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 h-full">
+                    <div class="bg-white flex flex-col h-full px-6 py-6 w-full border-2 border-gray-200 rounded-3xl">
+                        <img src="assets/image/qualytech.png" alt="Image" class="mb-6 hover:opacity-75 transition ease-in-out duration-500">
+
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">QualyTech - Tech Webshop</h4>
+
+                        <p class="font-light text-gray-400 text-sm md:text-md lg:text-lg mb-10">A school project where I apply and test my knowledge of PHP Laravel, Alpine.js, Tailwind CSS, HTML, CSS, and JavaScript.</p>
+
+
+                        <div class="flex items-center mb-8">
+                            <div class="size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/php.svg" alt="php" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/laravel.svg" alt="laravel" class="size-8">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/alpinejs.svg" alt="alpine" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/javascript.svg" alt="javascript" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/tailwind.svg" alt="taliwind" class="size-9">
+                            </div>
+                        </div>
+
+                        <div class="mt-auto flex justify-end">
+                            <a href="qualytech.html" class="font-semibold">More Info
+                                <span class="inline-block h-[17px] ml-1"><img src="assets/image/icons/arrow.svg" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white flex flex-col h-full px-6 py-6 w-full border-2 border-gray-200 rounded-3xl">
+                        <img src="assets/image/hotelkempenrust.png" alt="Image" class="mb-6 hover:opacity-75 transition ease-in-out duration-500">
+
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Hotel Kempenrust - Webapplication for Swimming Pool Management</h4>
+
+                        <p class="font-light text-gray-400 text-sm md:text-md lg:text-lg mb-10">A school team project where I apply and test my knowledge of PHP Laravel, Alpine.js, Tailwind CSS, HTML, CSS, and JavaScript.</p>
+
+
+                        <div class="flex items-center mb-8">
+                            <div class="size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/php.svg" alt="php" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/laravel.svg" alt="laravel" class="size-8">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/alpinejs.svg" alt="alpine" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/javascript.svg" alt="javascript" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/tailwind.svg" alt="taliwind" class="size-9">
+                            </div>
+                        </div>
+
+                        <div class="mt-auto flex justify-end">
+                            <a href="hotelkempenrust.html" class="font-semibold">More Info
+                                <span class="inline-block h-[17px] ml-1"><img src="assets/image/icons/arrow.svg" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white flex flex-col h-full px-6 py-6 w-full border-2 border-gray-200 rounded-3xl">
+                        <img src="assets/image/winterwood.png" alt="Image" class="mb-6 hover:opacity-75 transition ease-in-out duration-500">
+
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">WinterWood - Bed & Breakfast</h4>
+
+                        <p class="font-light text-gray-400 text-sm md:text-md lg:text-lg mb-10">A school project where I applied my knowledge of HTML and SASS for design, and JavaScript and Python for developing and integrating an API.</p>
+
+                        <div class="flex items-center mb-8">
+                            <div class="size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/python.svg" alt="python" class="size-7">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/sass.svg" alt="sass" class="size-8">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/bootstrap.svg" alt="bootstrap" class="size-9">
+                            </div>
+                            <div class="-ml-2 size-14 bg-gradient-to-r from-[#f8f8f8] to-[#E0E0E0] rounded-full border border-gray-300 flex items-center justify-center">
+                                <img src="assets/image/icons/javascript.svg" alt="javascript" class="size-9">
+                            </div>
+                        </div>
+
+                        <div class="mt-auto flex justify-end">
+                            <a href="winterwood.html" class="font-semibold">More Info
+                                <span class="inline-block h-[17px] ml-1"><img src="assets/image/icons/arrow.svg" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <a href="projects.html" class="px-7 py-5 font-semibold text-gray-900 rounded-2xl hover:text-emerald-500 transition ease-in-out duration-500">See all my projects</a>                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- donation section //end -->
+
+        <!-- feature section -->
+        <section class="bg-white py-16 md:mt-10">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <p class="font-light text-gray-500 text-lg md:text-xl text-center uppercase mb-6">Want to know more?</p>
+
+                <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-10">Learn more about me</h1>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                    <div class="text-center">
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">About Me</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">Learn more about who I am and what I do</p>
+
+                        <div class="flex justify-center">
+                            <a href="about-me.html" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:text-emerald-500 transition ease-linear duration-200">
+                                Click here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">My Projects</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">Explore my projects and accomplishments</p>
+
+                        <div class="flex justify-center">
+                            <a href="projects.html" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:text-emerald-500 transition ease-linear duration-200">
+                                Click here
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+
+                        <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">My CV</h4>
+
+                        <p class="font-light text-gray-500 text-md md:text-xl mb-6">Interested in my curriculum vitae (CV)?</p>
+
+                        <div class="flex justify-center">
+                            <a href="CV_JaroPeeters.pdf" target="_blank" class="flex items-center gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:text-emerald-500 transition ease-linear duration-200">
+                                Click here
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- feature section //end -->
+        <!-- join volunters section //end -->
+
+        <footer class="bg-white py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row lg:justify-between">
+
+                    <div class="space-y-7 mb-10 lg:mb-0">
+                        <div class="flex justify-center lg:justify-start">
+                            <p class="font-semibold text-2xl">Jaro Peeters</p>
+                        </div>
+
+                        <p class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left">Thank you for visiting and reading<br>my portfolio</p>
+
+                    </div>
+
+                    <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">Quick links</h4>
+
+                        <a href="about-me.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">About Me</a>
+
+                        <a href="projects.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Projects</a>
+                    </div>
+
+
+
+                    <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">More</h4>
+
+                        <a href="CV_JaroPeeters.pdf" target="_blank" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">CV</a>
+
+                        <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Contact Me</a>
+                    </div>
+
+                </div>
+            </div> <!-- container.// -->
+
+        </footer>
+
+    </body>
+</html>

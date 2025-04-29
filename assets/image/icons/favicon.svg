@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-608c07b2-0690-482e-90ae-1ee643a3f32c" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="248" height="248" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 248 248">
+  <defs>
+    <style>
+      .uuid-46cda894-0f7a-4a61-bebf-8afc7c3f8a37 {
+        fill: url(#uuid-002e7252-1b30-4547-b939-b8bd480e0b89);
+      }
+    </style>
+    <linearGradient id="uuid-002e7252-1b30-4547-b939-b8bd480e0b89" x1="0" y1="124" x2="248" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00caa5"/>
+      <stop offset="1" stop-color="#008d73"/>
+    </linearGradient>
+  </defs>
+  <path class="uuid-46cda894-0f7a-4a61-bebf-8afc7c3f8a37" d="M124,40c46.32,0,84,37.68,84,84s-37.68,84-84,84-84-37.68-84-84S77.68,40,124,40M124,0C55.52,0,0,55.52,0,124s55.52,124,124,124,124-55.52,124-124S192.48,0,124,0h0Z"/>
+</svg>

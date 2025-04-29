@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - QualyTech</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/image/icons/favicon.svg">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="font-poppins">
+
+<!-- home section -->
+<section class="bg-white py-10">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
+            <div class="flex items-center mb-10 lg:mb-0">
+                <p class="text-3xl font-extrabold">Jaro Peeters</p>
+
+                <button class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md" @click="navbarOpen = !navbarOpen">
+                    button
+                </button>
+            </div>
+
+            <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="about-me.html">About Me</a>
+                </li>
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="projects.html">Projects</a>
+                </li>
+            </ul>
+
+            <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                <a href="#" class="px-12 py-4 bg-gradient-to-r from-[#00CAA5] to-[#008D73] hover:from-[#00b192] hover:to-[#00725f] text-white font-semibold text-lg rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+            <div class="mt-24 w-1/2">
+                <img class="mb-3" src="assets/image/qualytech.png" alt="qualytech screenshot">
+            </div>
+            
+            <div class="text-center lg:text-left mt-40 w-1/2">
+                <h1 class="font-extrabold text-gradient text-3xl md:text-7xl leading-normal mb-6">QualyTech</h1>
+
+                <p class="font-medium text-gray-500 text-md md:text-lg leading-normal mb-6">This individual school project marked my first experience building a web application using <span class="font-bold text-gray-700">Laravel PHP</span>. Over the course of a semester, as part of the <span class="font-bold text-gray-700">Web Development</span> course, I developed a functional <span class="font-bold text-gray-700">e-commerce platform</span> focused on high-quality <span class="font-bold text-gray-700">monitors</span> and <span class="font-bold text-gray-700">graphics cards</span>. The webshop was designed to highlight premium technology products, offering a streamlined user experience with a clear emphasis on performance and quality.</p>
+            </div>
+        </div>
+    </div> <!-- container.// -->
+</section>
+<!-- home section //end -->
+
+<section class=" mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">What I Learned</h2>
+
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">During this project, I gained valuable experience in <span class="font-bold text-gray-700">web design</span>, particularly in creating more effective and visually appealing layouts. It also introduced me to <span class="font-bold text-gray-700">Laravel PHP</span>, which I found to be a powerful and intuitive framework that made backend development significantly more efficient.</p>
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">I especially enjoyed working with <span class="font-bold text-gray-700">Alpine.js</span> and <span class="font-bold text-gray-700">Tailwind CSS</span>, tools that allowed me to bring my designs to life quickly and responsively. This project not only strengthened my technical skills but also reinforced my passion for <span class="font-bold text-gray-700">creative web development</span>. Web design continues to be one of my favorite areas in IT, as it gives me the freedom to express my ideas and creativity through clean, user-focused interfaces.</p>
+
+            </div>
+
+            <div class="w-1/3">
+                <div class="grid grid-cols-3 gap-3 place-items-center">
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/php.svg" alt="php" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/laravel.svg" alt="laravel" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/alpinejs.svg" alt="alpine" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/javascript.svg" alt="javascript" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/tailwind.svg" alt="tailwind" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<section class="bg-white mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="w-1/3">
+                <img src="assets/image/project.svg" alt="project">
+            </div>
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">My Role in the Project</h2>
+
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">This was an <span class="font-bold text-gray-700">individual project</span>, meaning all of the code and functionalities were developed solely by me. While the course provided several examples and reference materials, the final implementation reflects my own understanding of the concepts. It demonstrates my ability to apply <span class="font-bold text-gray-700">PHP</span>, <span class="font-bold text-gray-700">Laravel</span>, <span class="font-bold text-gray-700">Alpine.js</span>, and <span class="font-bold text-gray-700">Tailwind CSS</span> creatively and independently in a real-world context.</p>
+
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<section class="bg-white mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">Explore This Project</h2>
+
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">GitHub Repository:</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="https://github.com/itfactory-tm/2appai01-2024-2025-webdev-personal-project-JaroPeeters">Click Here</a>
+                </div>
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">YouTube - Accessible on All Devices:</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="https://youtu.be/Ma2il9Xcu24">Click Here</a>
+                </div>
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">YouTube - Dark Mode:</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="https://youtu.be/nzQ175KQ9Do">Click Here</a>
+                </div>
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">Document - Functionalities:</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="#">Unavailable</a>
+                </div>
+
+            </div>
+
+            <div class="w-1/3">
+                <img src="assets/image/search.svg" alt="search">
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<footer class="bg-white py-16">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+
+            <div class="space-y-7 mb-10 lg:mb-0">
+                <div class="flex justify-center lg:justify-start">
+                    <p class="font-semibold text-2xl">Jaro Peeters</p>
+                </div>
+
+                <p class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left">Thank you for visiting and reading<br>my portfolio</p>
+
+            </div>
+
+            <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">Quick links</h4>
+
+                <a href="about-me.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">About Me</a>
+
+                <a href="projects.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Projects</a>
+            </div>
+
+
+
+            <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">More</h4>
+
+                <a href="CV_JaroPeeters.pdf" target="_blank" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">CV</a>
+
+                <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Contact Me</a>
+            </div>
+
+        </div>
+    </div> <!-- container.// -->
+
+</footer>
+
+</body>
+</html>

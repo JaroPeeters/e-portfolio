@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - De Beerse Bende</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/image/icons/favicon.svg">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="font-poppins">
+
+<!-- home section -->
+<section class="bg-white py-10">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <nav class="flex-wrap lg:flex items-center" x-data="{navbarOpen:false}">
+            <div class="flex items-center mb-10 lg:mb-0">
+                <p class="text-3xl font-extrabold">Jaro Peeters</p>
+
+                <button class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md" @click="navbarOpen = !navbarOpen">
+                    button
+                </button>
+            </div>
+
+            <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="about-me.html">About Me</a>
+                </li>
+                <li class="font-semibold text-gray-900 hover:text-emerald-500 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                    <a href="projects.html">Projects</a>
+                </li>
+            </ul>
+
+            <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                <a href="#" class="px-12 py-4 bg-gradient-to-r from-[#00CAA5] to-[#008D73] hover:from-[#00b192] hover:to-[#00725f] text-white font-semibold text-lg rounded-full transition ease-in-out duration-500 mb-5 md:mb-0">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+            <div class="mt-24 w-1/2">
+                <img class="mb-3" src="assets/image/debeersebende.png" alt="de beerse bende screenshot">
+            </div>
+
+            <div class="text-center lg:text-left mt-40 w-1/2">
+                <h1 class="font-extrabold text-gradient text-3xl md:text-7xl leading-normal mb-6">De Beerse Bende</h1>
+
+                <p class="font-medium text-gray-500 text-md md:text-lg leading-normal mb-6">This project was completed as part of the <span class="font-bold text-gray-700">Skill Integration 2</span> course, where I worked closely with a team of classmates to define and design a solution for a simulated client — one of our lecturers who assigned us the task. The goal was to replace the manual process of organizing and communicating about a <span class="font-bold text-gray-700">stage performance</span>. Instead of relying on handwritten notes or phone calls, the client wanted a <span class="font-bold text-gray-700">web application</span> where clients could easily access and manage relevant information.</p>
+                <p class="font-medium text-gray-500 text-md md:text-lg leading-normal mb-6">As a team, we created a detailed <span class="font-bold text-gray-700">use case diagram</span> and wrote descriptions for each required <span class="font-bold text-gray-700">functionality</span> based on the client’s expectations. We concluded the project with a non-functional <span class="font-bold text-gray-700">demo design</span>, visually presenting the layout, features and must have functionalities of the web application.</p>
+            </div>
+        </div>
+    </div> <!-- container.// -->
+</section>
+<!-- home section //end -->
+
+<section class="bg-white mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">What I Learned</h2>
+
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">During this project, I gained valuable experience in <span class="font-bold text-gray-700">team collaboration</span> and learned how to identify the most effective ways to turn a client’s idea into a practical digital solution. We created a detailed <span class="font-bold text-gray-700">use case diagram</span> with accompanying <span class="font-bold text-gray-700">descriptions</span> to map out the required functionalities, using <span class="font-bold text-gray-700">StarUML</span> for visual modeling.</p>
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">To bring the concept to life visually, we used <span class="font-bold text-gray-700">Figma</span> to design a mockup of the web application. This allowed us to present a clear <span class="font-bold text-gray-700">demo</span> to the client, showcasing how each feature would work and gathering valuable <span class="font-bold text-gray-700">feedback</span> to refine our ideas.</p>
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">Additionally, I deepened my understanding of <span class="font-bold text-gray-700">Jira</span> and how to use it efficiently within a sprint-based workflow. Managing tasks, assigning responsibilities, and tracking progress through different development phases gave me a solid foundation in project planning and agile methodology.</p>
+
+            </div>
+
+            <div class="w-1/3">
+                <div class="grid grid-cols-3 gap-3 place-items-center">
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/staruml.png" alt="staruml" class="size-14 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/figma.svg" alt="figma" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="border-2 rounded-2xl flex justify-center items-center bg-gradient-to-r from-[#fff] to-[#f8f8f8] w-full h-28">
+                        <img src="assets/image/icons/jira.svg" alt="jira" class="size-16 transition-transform duration-300 hover:scale-110">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<section class="bg-white mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="w-1/3">
+                <img src="assets/image/project.svg" alt="project">
+            </div>
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">My Role in the Project</h2>
+
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">I worked in a team of <span class="font-bold text-gray-700">6</span> students, where we collaborated closely using <span class="font-bold text-gray-700">Jira</span> to organize our tasks, manage communication, and ensure an even distribution of work throughout the project.</p>
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">My main responsibility was creating the <span class="font-bold text-gray-700">use case diagram</span> using <span class="font-bold text-gray-700">StarUML</span>, with continuous input and feedback from the team to refine the final structure. Additionally, I worked extensively in <span class="font-bold text-gray-700">Figma</span>, where I created the <span class="font-bold text-gray-700">main demo design</span> of the application and developed <span class="font-bold text-gray-700">functionality mockups</span> to demonstrate how each feature would work. This visual demo played a key role in presenting our concept to the client and gathering valuable feedback.</p>
+
+                <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6"><span class="underline ">Team members:</span> Bram van Asperen - Daan Borghs - Senne Fabri - Tijl Cleynhens - Siyar Yildirim</p>
+
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<section class="bg-white mt-32">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+
+        <div class="flex flex-col lg:flex-row justify-between space-x-20 items-center">
+
+            <div class="text-center lg:text-left w-2/3">
+                <h2 class="text-3xl font-semibold mb-8">Explore This Project</h2>
+
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">Document - Analysis & Design Report</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="#">Unavailable</a>
+                </div>
+                <div class="flex">
+                    <p class="font-medium text-gray-600 text-md md:text-lg leading-normal mb-6">Figma - Demo Functionalities:</p>
+                    <a class="ml-2 font-medium text-emerald-500 hover:text-emerald-600 hover:underline text-md md:text-lg leading-normal mb-6" href="#">Unavailable</a>
+                </div>
+
+            </div>
+
+            <div class="w-1/3">
+                <img src="assets/image/search.svg" alt="search">
+            </div>
+
+        </div>
+
+    </div> <!-- container.// -->
+
+</section>
+
+<footer class="bg-white py-16">
+
+    <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+
+            <div class="space-y-7 mb-10 lg:mb-0">
+                <div class="flex justify-center lg:justify-start">
+                    <p class="font-semibold text-2xl">Jaro Peeters</p>
+                </div>
+
+                <p class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left">Thank you for visiting and reading<br>my portfolio</p>
+
+            </div>
+
+            <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">Quick links</h4>
+
+                <a href="about-me.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">About Me</a>
+
+                <a href="projects.html" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Projects</a>
+            </div>
+
+
+
+            <div class="text-center lg:text-left space-y-7 mb-10 lg:mb-0">
+                <h4 class="font-semibold text-gray-900 text-lg md:text-2xl">More</h4>
+
+                <a href="CV_JaroPeeters.pdf" target="_blank" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">CV</a>
+
+                <a href="#" class="block font-light text-gray-400 text-sm md:text-lg hover:text-gray-800 transition ease-in-out duration-300">Contact Me</a>
+            </div>
+
+        </div>
+    </div> <!-- container.// -->
+
+</footer>
+
+</body>
+</html>
